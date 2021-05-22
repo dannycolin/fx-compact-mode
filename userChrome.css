@@ -8,7 +8,7 @@
  */
 
 :root {
-	--proton-tab-block-margin: 3px !important;
+  --proton-tab-block-margin: 3px !important;
 }
 
 /* Tab */
@@ -17,18 +17,18 @@
 }
 
 .tab-close-button {
-	width: 16px !important;
-	height: 16px !important;
+  width: 16px !important;
+  height: 16px !important;
   padding: 3px !important;
 }
 
 /* Toolbar */
 #urlbar-container{
-	--urlbar-container-height: 30px !important;
-  margin-top: -2px !important;
+  --urlbar-container-height: 30px !important;
+  margin-top: -1px !important;
 }
 
 #urlbar:not([open="true"]) {
-	height: 24px !important;
-	min-height: 0 !important;
+  height: 24px !important;
+  min-height: 0 !important;
 }
