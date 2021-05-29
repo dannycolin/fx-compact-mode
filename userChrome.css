@@ -9,6 +9,8 @@
 
 :root {
 	--proton-tab-block-margin: 3px !important;
+  /* Appmenu item padding */
+  --arrowpanel-menuitem-padding-block: 4px 8px !important;
 }
 
 /* Tab */
