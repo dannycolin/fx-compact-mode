@@ -2,7 +2,8 @@
 
 ## Installation
 
-Follow the instruction in https://www.userchrome.org/how-create-userchrome-css.html.
+1. Follow the instruction in https://www.userchrome.org/how-create-userchrome-css.html.
+2. Open *about:config* and set `browser.compactmode.show` to `true`.
 
 ## Screenshots
 
