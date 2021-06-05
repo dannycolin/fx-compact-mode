@@ -8,34 +8,30 @@
  */
 
 :root {
-	--proton-tab-block-margin: 3px !important;
-  /* Appmenu item padding */
+  /* Appmenu: Reduce item padding */
   --arrowpanel-menuitem-padding-block: 4px 8px !important;
+  /* Tabbar: reduce tab margin */
+  --tab-block-margin: 4px 3px !important;
 }
 
-/* Tab */
+/* Tab: Reduce height */
 .tabbrowser-tab {
-  min-height: 0 !important;
+  min-height: 24px !important;
 }
 
-.tab-close-button {
-	width: 16px !important;
-	height: 16px !important;
-  padding: 3px !important;
+/* URLBar: Fix vertical alignment */
+#urlbar[breakout=true]:not([open="true"]) {
+	--urlbar-height: 20px !important;
+	--urlbar-toolbar-height: 24px !important;
 }
 
-/* Toolbar */
-#urlbar:not([open="true"]) {
-	height: 24px !important;
-	min-height: 0 !important;
-}
-
+/* Toolbar: Reduce spacing */
 #urlbar-container {
 	--urlbar-container-height: 30px !important;
-  margin-top: -1px !important;
+  margin-top: 0 !important;
 }
 
-#urlbar-input {
-	margin-top: 1px !important;
+/* Reload Button: Fix vertical alignment */
+#reload-button {
+	margin-block-start: -2px !important;
 }
-
