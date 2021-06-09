@@ -7,31 +7,79 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-:root {
-  /* Appmenu: Reduce item padding */
-  --arrowpanel-menuitem-padding-block: 4px 8px !important;
-  /* Tabbar: reduce tab margin */
-  --tab-block-margin: 4px 3px !important;
+/* fixes by sagars007 u/thegtaguy007 */
+/* tested in windows 10 firefox nightly */
+
+ :root #tabbrowser-tabs {
+   /* tab height */
+	--tab-min-height: 24px !important; 
+   } 
+
+/*prevent tab overflow to expand causing height changes */
+#tabbrowser-tabs,
+#tabbrowser-tabs > .tabbrowser-arrowscrollbox{
+  min-height: unset !important;
+}
+#TabsToolbar{ --toolbarbutton-inner-padding: 3px !important; }
+
+.tab-background {
+  margin: 3px !important;
 }
 
-/* Tab: Reduce height */
-.tabbrowser-tab {
-  min-height: 24px !important;
+/*adjusting urlbar and searchbar positions */
+#urlbar{
+	min-height: 26px !important; 
+	margin-block: 0px 0px!important;
+}
+#urlbar-background{
+	margin-block: 0px 0px !important;
+}
+#urlbar-container{
+	margin-block: 0px -4px;
+}
+#searchbar {
+	min-height: 26px !important;
+	margin-block: -4px !important;
 }
 
-/* URLBar: Fix vertical alignment */
-#urlbar[breakout=true]:not([open="true"]) {
-	--urlbar-height: 20px !important;
-	--urlbar-toolbar-height: 24px !important;
+/*context menuitem padding and rounded hover style changes*/
+menupopup > menuitem,
+menupopup > menu
+ {
+	border-radius: 4px !important;
+	margin-left: 8px !important;
+	margin-right: 8px !important;
+}
+/* context menu top left button padding */
+menugroup > menuitem:first-child {  
+	border-radius: 4px !important;
+	padding-left: 8px !important;
+}
+/* context menu top right button padding */
+menugroup > menuitem:last-child {  
+	border-radius: 4px !important;
+	padding-right: 8px !important;
+
+}
+/* context menu top buttons radius */
+menugroup > menuitem {
+	border-radius: 4px !important;
+}
+menugroup > menuitem > hbox > image {  
+  border-radius: 4px !important;
+}
+/* for menu item with submenu  */
+.panel-header > .subviewbutton {
+	border-radius: 4px !important;
+  }
+
+/* context menu padding */
+menupopup > menuitem,
+menupopup > menu {
+  padding-block: 0.15em !important;
 }
 
-/* Toolbar: Reduce spacing */
-#urlbar-container {
-	--urlbar-container-height: 30px !important;
-  margin-top: 0 !important;
-}
-
-/* Reload Button: Fix vertical alignment */
-#reload-button {
-	margin-block-start: -2px !important;
+/* hamburger menu item padding */
+toolbarbutton {
+  --arrowpanel-menuitem-padding: 2px 8px;
 }
