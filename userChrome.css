@@ -10,82 +10,79 @@
 /* fixes by sagars007 u/thegtaguy007 */
 /* tested in windows 10 firefox nightly */
 
- :root #tabbrowser-tabs {
-   /* tab height */
-	--tab-min-height: 24px !important; 
-   } 
+ :root {
+	--tab-min-height: 22px !important; 
 
-/*prevent tab overflow to expand causing height changes */
-#tabbrowser-tabs,
-#tabbrowser-tabs > .tabbrowser-arrowscrollbox{
-  min-height: unset !important;
-}
-#TabsToolbar{ --toolbarbutton-inner-padding: 3px !important; }
+   }
 
-.tab-background {
-  margin: 3px !important;
-}
+:root #tabbrowser-tabs {
+	/* tab height */
+	 --tab-min-height: 22px !important;  /* must be same as in :root */
+	} 
+ 
+/* Fixing close/min/max due to decreased height */
+#toolbar-menubar .titlebar-button{ padding-block: 0px !important; } 
 
-/*adjusting urlbar and searchbar positions */
-#urlbar{
-	min-height: 26px !important; 
-	margin-block: 0px 0px!important;
-}
-#urlbar-background{
-	margin-block: 0px 0px !important;
-}
-#urlbar-container{
-	margin-block: 0px -4px;
-}
-#searchbar {
-	min-height: 26px !important;
-	margin-block: -4px !important;
-}
-
-/*context menuitem padding and rounded hover style changes*/
-menupopup > menuitem,
-menupopup > menu
- {
-	border-radius: 4px !important;
-	margin-left: 8px !important;
-	margin-right: 8px !important;
-}
-/* context menu top left button padding */
-menugroup > menuitem:first-child {  
-	border-radius: 4px !important;
-	padding-left: 8px !important;
-}
-/* context menu top right button padding */
-menugroup > menuitem:last-child {  
-	border-radius: 4px !important;
-	padding-right: 8px !important;
-
-}
-/* context menu top buttons radius */
-menugroup > menuitem {
-	border-radius: 4px !important;
-}
-menugroup > menuitem > hbox > image {  
-  border-radius: 4px !important;
-}
-/* for menu item with submenu  */
-.panel-header > .subviewbutton {
-	border-radius: 4px !important;
-  }
-
-/* context menu padding */
-menupopup > menuitem,
-menupopup > menu {
-  padding-block: 0.15em !important;
-}
-
-/* hamburger menu item padding */
-toolbarbutton {
-  --arrowpanel-menuitem-padding: 2px 8px;
-}
-
-/* green dot on pinned tab for site update position fix */
-.tabbrowser-tab > .tab-stack >
- .tab-content[pinned][titlechanged]:not([selected="true"]){
-  background-position: bottom !important;
-}
+ /*adjusting urlbar and searchbar positions */
+ #urlbar{
+	 min-height: 26px !important; 
+	 margin-block: 0px 0px!important;
+ }
+ #urlbar-background{
+	 margin-block: 0px 0px !important;
+ }
+ #urlbar-container{
+	 margin-block: 0px -4px;
+ }
+ #searchbar {
+	 min-height: 26px !important;
+	 margin-block: -4px !important;
+ }
+ 
+ /*context menuitem padding and rounded hover style changes*/
+ menupopup > menuitem,
+ menupopup > menu
+  {
+	 border-radius: 4px !important;
+	 margin-left: 8px !important;
+	 margin-right: 8px !important;
+ }
+ /* context menu top left button padding */
+ menugroup > menuitem:first-child {  
+	 border-radius: 4px !important;
+	 padding-left: 8px !important;
+ }
+ /* context menu top right button padding */
+ menugroup > menuitem:last-child {  
+	 border-radius: 4px !important;
+	 padding-right: 8px !important;
+ 
+ }
+ /* context menu top buttons radius */
+ menugroup > menuitem {
+	 border-radius: 4px !important;
+ }
+ menugroup > menuitem > hbox > image {  
+   border-radius: 4px !important;
+ }
+ /* for menu item with submenu  */
+ .panel-header > .subviewbutton {
+	 border-radius: 4px !important;
+   }
+ 
+ /* context menu padding */
+ menupopup > menuitem,
+ menupopup > menu {
+   padding-block: 0.15em !important;
+ }
+ 
+ /* hamburger menu item padding */
+ toolbarbutton {
+   --arrowpanel-menuitem-padding: 2px 8px;
+ }
+ 
+ /* green dot on pinned tab for site update notif */
+ .tabbrowser-tab > .tab-stack >
+  .tab-content[pinned][titlechanged]:not([selected="true"]){
+   background-position: bottom !important;
+ }
