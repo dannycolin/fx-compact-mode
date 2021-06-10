@@ -83,3 +83,9 @@ menupopup > menu {
 toolbarbutton {
   --arrowpanel-menuitem-padding: 2px 8px;
 }
+
+/* green dot on pinned tab for site update position fix */
+.tabbrowser-tab > .tab-stack >
+ .tab-content[pinned][titlechanged]:not([selected="true"]){
+  background-position: bottom !important;
+}
