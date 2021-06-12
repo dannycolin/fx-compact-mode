@@ -19,6 +19,12 @@
   min-height: 24px !important;
 }
 
+/* Tab: Ensure tab height doesn't augment when arrowscrollbox is visible  */ 
+#tabbrowser-arrowscrollbox {
+  --tab-min-height: 31px !important;
+  max-height: var(--tab-min-height);
+}
+
 /* URLBar: Fix vertical alignment */
 #urlbar[breakout=true]:not([open="true"]) {
 	--urlbar-height: 20px !important;
