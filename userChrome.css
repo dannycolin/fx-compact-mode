@@ -25,6 +25,11 @@
 	--urlbar-toolbar-height: 24px !important;
 }
 
+/* URLBar: Fix URL address vertical aligment when megabar is open */
+#urlbar[breakout=true][open="true"] {
+	--urlbar-toolbar-height: 30px !important;
+}
+
 /* Toolbar: Reduce spacing */
 #urlbar-container {
 	--urlbar-container-height: 30px !important;
