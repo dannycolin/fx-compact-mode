@@ -36,6 +36,17 @@
 	--urlbar-toolbar-height: 30px !important;
 }
 
+/* Searchbar: Ensure toolbar height doesn't augment when searchbar is visible */
+#urlbar-container, 
+#search-container {
+	padding-block: 0 !important;
+}
+
+/* Searchbar: Make sure the min-height of the input is the same as the popup */
+#search-container {
+  min-width: 192px !important;
+}
+
 /* Toolbar: Reduce spacing */
 #urlbar-container {
 	--urlbar-container-height: 30px !important;

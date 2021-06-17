@@ -1,4 +1,4 @@
-# Firefox Ultra Compact Mode
+# Firefox Compact Mode
 
 This theme goal is to create a compact mode that follows Firefox 89 (known as
 Proton) design system while using the same vertical space as the compact mode in
