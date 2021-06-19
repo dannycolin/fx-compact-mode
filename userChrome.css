@@ -66,8 +66,7 @@
  menupopup > menu
   {
      border-radius: 4px !important;
-     margin-left: 8px !important;
-     margin-right: 8px !important;
+     margin: 0 8px 2.5px 8px !important;
  }
  /* context menu top left button padding */
  menugroup > menuitem:first-child {  
