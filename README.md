@@ -4,6 +4,12 @@ This theme goal is to create a compact mode that follows Firefox 89 (known as
 Proton) design system while using the same vertical space as the compact mode in
 Firefox 88 (known as Photon).
 
+It has been tested on:
+
+- Linux
+- macOS Big Sur
+- Windows 10
+
 ## Installation
 
 1. Type *about:config* in the address bar and press Enter/Return.
@@ -13,11 +19,11 @@ Firefox 88 (known as Photon).
 4. Double-click the `toolkit.legacyUserProfileCustomizations.stylesheets`
    preference to switch the value from false to true.
 5. Now, search for `browser.compactmode.show` and set it to `true`.
-6. Close *about:config* tab.
-7. Open your profile folder (See [How do I find my profile?][profile])
-8. Go to *chrome* folder or create it if it doesn't exist
-9. Copy/Paste the userChrome.css file from this repository inside the *chrome*
+6. Open your profile folder (See [How do I find my profile?][profile])
+7. Go to *chrome* folder or create it if it doesn't exist
+8. Copy/Paste the userChrome.css file from this repository inside the *chrome*
    folder.
+9. Restart Firefox.
 10. Enjoy! :)
 
 ## Screenshots (Click on the image to enlarge)
