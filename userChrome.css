@@ -57,3 +57,12 @@
 #reload-button {
 	margin-block-start: -2px !important;
 }
+
+/* Windows 10 context menu */
+@media (-moz-os-version: windows-10) {
+  /* Context Menu: Reduce vertical space */
+  menupopup > menuitem,
+  menupopup > menu {
+    padding-block: 2px !important;
+  }
+}
