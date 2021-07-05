@@ -23,7 +23,7 @@ I try to test my script in the platforms listed below. However, that doesn't mea
    `toolkit.legacyUserProfileCustomizations.stylesheets`.
 4. Double-click the `toolkit.legacyUserProfileCustomizations.stylesheets`
    preference to switch the value from false to true.
-5. Now, search for `browser.compactmode.show` and set it to `true`.
+5. Now, search for `browser.uidensity` and set it to `1`.
 6. Open your profile folder (See [How do I find my profile?][profile])
 7. Go to *chrome* folder or create it if it doesn't exist
 8. Copy/Paste the userChrome.css file from this repository inside the *chrome*
