@@ -25,6 +25,12 @@
   max-height: var(--tab-min-height);
 }
 
+/* Tab: Attention icon */
+.tabbrowser-tab:is([image], [pinned]) > .tab-stack > .tab-content[attention]:not([selected="true"]), .tabbrowser-tab > .tab-stack > .tab-content[pinned][titlechanged]:not([selected="true"]) {
+  background-position-x: left 2px !important;
+  background-position-y: bottom 12.5px !important;
+}
+
 /* URLBar: Fix vertical alignment */
 #urlbar[breakout=true]:not([open="true"]) {
 	--urlbar-height: 20px !important;
