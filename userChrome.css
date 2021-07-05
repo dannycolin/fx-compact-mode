@@ -65,7 +65,7 @@
 }
 
 /* Windows 10 context menu */
-@media (-moz-os-version: windows-10) {
+@media (-moz-os-version: windows-win10) {
   /* Context Menu: Reduce vertical space */
   menupopup > menuitem,
   menupopup > menu {
