@@ -8,8 +8,6 @@
  */
 
 :root {
-  /* Appmenu: Reduce item padding */
-  --arrowpanel-menuitem-padding-block: 4px 8px !important;
   /* Tabbar: reduce tab margin */
   --tab-block-margin: 4px 3px !important;
 }
@@ -62,6 +60,16 @@
 /* Reload Button: Fix vertical alignment */
 #reload-button {
 	margin-block-start: -2px !important;
+}
+
+/* AppMenu: Header */
+.panel-header {
+	padding: 4px 0 0 4px !important;
+}
+
+/* AppMenu: Header button */
+.panel-header > .subviewbutton-back {
+	padding: 4px !important;
 }
 
 /* Windows 10 context menu */
