@@ -40,6 +40,25 @@
 	--urlbar-toolbar-height: 30px !important;
 }
 
+/* URLBar: Reduce row items padding */
+.urlbarView-row-inner {
+	padding-inline: var(--urlbarView-item-inline-padding);
+	padding-block: 2px !important;
+}
+
+/* URLBar: Reduce and realign row bookmark icons */
+.urlbarView-type-icon {
+	width: 10px !important;
+	height: 10px !important;
+	margin-bottom: 0 !important;
+	margin-inline-start: 10px !important;
+}
+
+/* URLBar: Reduce "This time, serach with" padding */
+#urlbar .search-one-offs:not([hidden]) {
+	padding-block: 4px !important;
+}
+
 /* Searchbar: Ensure toolbar height doesn't augment when searchbar is visible */
 #urlbar-container, 
 #search-container {
