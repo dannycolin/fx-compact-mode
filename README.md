@@ -33,22 +33,12 @@ I try to test my script in the platforms listed below. However, that doesn't mea
 
 ## Screenshots (Click on the image to enlarge)
 
-Size difference between (from left to right) regular, compact and ultra compact
-mode
-
-<img src="screenshots/ff-ultra-diff.png"
-     alt="Size difference between regular, compact and ultra compact mode">
-
-Dark theme:
-
-<img src="screenshots/ff-ultra-dark.png"
-     alt="Preview in dark mode"
+<img src="screenshots/fx-compact-mode.png"
+     alt="Main window of Firefox"
      width="500">
 
-Light theme:
-
-<img src="screenshots/ff-ultra-light.png"
-     alt="Preview in light mode"
+<img src="screenshots/fx-compact-mode-urlbar.png"
+     alt="URLBar expanded"
      width="500">
 
 [profile]: https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data#w_how-do-i-find-my-profile
